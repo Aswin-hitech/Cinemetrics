@@ -218,9 +218,12 @@ It showcases:
 ## 👨‍💻 Author
 
 **Aswin**
-kit28.24bam009@gmail.com
-KIT-KalaignarKarunanidhi Institute of Technology, Coimbatore
-AI/ML Student
+  
+  kit28.24bam009@gmail.com
+  
+  KIT-KalaignarKarunanidhi Institute of Technology, Coimbatore
+  
+  AI/ML Student
 
 ---
 
