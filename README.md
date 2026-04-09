@@ -226,7 +226,3 @@ It showcases:
   AI/ML Student
 
 ---
-
-## ⭐ If you like this project
-
-Give it a star ⭐ and use it for your portfolio!
