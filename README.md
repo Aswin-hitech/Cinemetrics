@@ -210,7 +210,6 @@ This project demonstrates how **data science and full-stack development can work
 
 It showcases:
 
-* Real-time data handling
 * Analytical thinking
 * Visual storytelling using data
 
