@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineMetrics | Advanced Analytics Hub</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="light-theme">
+    <nav>
+        <div class="logo">CINEMETRICS</div>
+        <div class="nav-links">
+            <a href="/">Browse</a>
+            <a href="/dashboard">Analytics Hub</a>
+            <a href="#" class="btn btn-primary">Download Report</a>
+        </div>
+    </nav>
+
+    <div class="dashboard-container">
+        <header class="animate-in">
+            <p>Enterprise Intelligence</p>
+            <h1>CineMetrics <span>Analytics Hub</span></h1>
+        </header>
+
+        <!-- KPI Section -->
+        <div class="kpi-grid animate-in" style="animation-delay: 0.1s;">
+            <div class="kpi-card">
+                <h3>Total Movies</h3>
+                <p id="totalMovies">0</p>
+            </div>
+            <div class="kpi-card">
+                <h3>Total Ratings</h3>
+                <p id="totalRatings">0</p>
+            </div>
+            <div class="kpi-card">
+                <h3>Total Tickets</h3>
+                <p id="totalTickets">0</p>
+            </div>
+            <div class="kpi-card">
+                <h3>Peak Performance</h3>
+                <p id="peakHour">N/A</p>
+            </div>
+        </div>
+
+        <div class="dashboard-content animate-in" style="animation-delay: 0.2s;">
+            <!-- Main Charts Logic -->
+            <div class="charts-grid">
+                <div class="chart-card">
+                    <h4>Ticket Sales Trend</h4>
+                    <div class="chart-wrapper">
+                        <canvas id="trendsChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-card">
+                    <h4>Audience Sentiment</h4>
+                    <div class="chart-wrapper">
+                        <canvas id="sentimentChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-card">
+                    <h4>Movie Rating Distribution</h4>
+                    <div class="chart-wrapper">
+                        <canvas id="ratingsChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-card">
+                    <h4>Sales Forecast (7 Days)</h4>
+                    <div class="chart-wrapper">
+                        <canvas id="forecastChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-card">
+                    <h4>Genre Popularity</h4>
+                    <div class="chart-wrapper">
+                        <canvas id="genreChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-card">
+                    <h4>Competitive Intensity</h4>
+                    <div class="chart-wrapper">
+                        <canvas id="radarChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar Insights -->
+            <aside class="sidebar-card">
+                <h4>AI Smart Insights</h4>
+                <div id="insightsPanel">
+                    <!-- Injected by JS -->
+                    <div class="insight-item">
+                        <p>Loading AI insights...</p>
+                    </div>
+                </div>
+                <div class="recommendation-box">
+                    <p>Strategic Action</p>
+                    <p id="actionNote">Optimize inventory for high-performing "Action" titles.</p>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+</body>
+</html>

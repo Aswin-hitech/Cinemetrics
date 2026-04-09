@@ -1,0 +1,157 @@
+[
+    {
+        "id": 1,
+        "name": "Leo",
+        "genre": "Action",
+        "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi0wab8d8w6kjByHrgOkfV9GyDj1fFOSsqLw&s",
+        "ratings": [
+            4,
+            5,
+            3,
+            5,
+            4,
+            5
+        ],
+        "tickets": {
+            "morning": 20,
+            "afternoon": 45,
+            "evening": 81,
+            "night": 60
+        }
+    },
+    {
+        "id": 2,
+        "name": "Jailer",
+        "genre": "Action",
+        "poster": "https://m.media-amazon.com/images/M/MV5BMjE5MzhjYmItMGFjNC00ODIxLWJkNjktYWMxYTU0ZTM3NGYzXkEyXkFqcGc@._V1_.jpg",
+        "ratings": [
+            5,
+            4,
+            5,
+            5,
+            4
+        ],
+        "tickets": {
+            "morning": 15,
+            "afternoon": 30,
+            "evening": 90,
+            "night": 70
+        }
+    },
+    {
+        "id": 3,
+        "name": "Vikram",
+        "genre": "Action",
+        "poster": "https://i.pinimg.com/736x/f8/0e/67/f80e67d86fdb7dff30a1a054f535c83c.jpg",
+        "ratings": [
+            5,
+            5,
+            4,
+            5,
+            5
+        ],
+        "tickets": {
+            "morning": 10,
+            "afternoon": 25,
+            "evening": 40,
+            "night": 30
+        }
+    },
+    {
+        "id": 4,
+        "name": "Premalu",
+        "genre": "Love",
+        "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRogGPC7ciKrllT2rKr4ZT00XW88zKf-i1W0w&s",
+        "ratings": [
+            5,
+            5,
+            5,
+            4,
+            5
+        ],
+        "tickets": {
+            "morning": 5,
+            "afternoon": 15,
+            "evening": 51,
+            "night": 40
+        }
+    },
+    {
+        "id": 5,
+        "name": "Endgame",
+        "genre": "Superhero",
+        "poster": "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+        "ratings": [
+            5,
+            5,
+            5,
+            5,
+            4,
+            5
+        ],
+        "tickets": {
+            "morning": 30,
+            "afternoon": 60,
+            "evening": 120,
+            "night": 100
+        }
+    },
+    {
+        "id": 6,
+        "name": "Inception",
+        "genre": "Sci-Fi",
+        "poster": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+        "ratings": [
+            5,
+            4,
+            5,
+            5,
+            5
+        ],
+        "tickets": {
+            "morning": 10,
+            "afternoon": 20,
+            "evening": 60,
+            "night": 50
+        }
+    },
+    {
+        "id": 7,
+        "name": "The Dark Knight",
+        "genre": "Action",
+        "poster": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+        "ratings": [
+            5,
+            5,
+            5,
+            5,
+            5
+        ],
+        "tickets": {
+            "morning": 25,
+            "afternoon": 51,
+            "evening": 111,
+            "night": 90
+        }
+    },
+    {
+        "id": 8,
+        "name": "Youth",
+        "genre": "Drama",
+        "poster": "https://cdn.district.in/movies-assets/images/cinema/Youth_Gallery-639e8510-05a2-11f1-ac1f-3391dbf045e5.jpg",
+        "ratings": [
+            5,
+            5,
+            4,
+            5,
+            5,
+            4
+        ],
+        "tickets": {
+            "morning": 5,
+            "afternoon": 10,
+            "evening": 40,
+            "night": 30
+        }
+    }
+]

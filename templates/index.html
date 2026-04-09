@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineMetrics | Premium Movie Analytics</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Main Style -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">CINEMETRICS</div>
+        <div class="nav-links">
+            <a href="/">Browse</a>
+            <a href="/dashboard">Analytics Hub</a>
+            <a href="#" class="btn btn-primary">Try Pro</a>
+        </div>
+    </nav>
+
+    <header style="padding: 4rem 5% 2rem; background: linear-gradient(var(--bg-dark), transparent);">
+        <h1 style="font-size: 3.5rem; margin-bottom: 1rem;">Experience <span style="color: var(--accent-glow)">Cinema</span><br>Like Never Before.</h1>
+        <p style="color: var(--text-dim); max-width: 600px; font-size: 1.1rem; line-height: 1.6;">
+            Premium ticket booking with real-time analytics. Join 50k+ enthusiasts watching the latest blockbusters.
+        </p>
+    </header>
+
+    <main style="padding: 0 5%;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 2rem;">
+            <h2 style="font-size: 1.8rem;">Trending Now</h2>
+            <div style="display: flex; gap: 1rem;">
+                <!-- Filter placeholders -->
+                <select class="glass-card" style="padding: 0.5rem 1rem; color: white; border-radius: 8px; outline: none;">
+                    <option>All Genres</option>
+                    <option>Action</option>
+                    <option>Drama</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="movieGrid" class="movie-grid">
+            <!-- Movie cards will be injected here -->
+            <div class="skeleton-grid" style="display: contents;">
+                <!-- Skeleton Loading State -->
+                ${Array(5).fill(0).map(() => `<div class="glass-card" style="height: 320px; border-radius: 12px; opacity: 0.3;"></div>`).join('')}
+            </div>
+        </div>
+    </main>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal-overlay" onclick="if(event.target == this) closeModal()">
+        <div id="modalContent" class="modal-content glass-card animate-in">
+            <!-- Injected by JS -->
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
