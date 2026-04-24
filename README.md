@@ -1,4 +1,4 @@
-# 🎬 Movie Analytics Platform
+# 🎬 Cinemetrics - A Movie analytics platform
 
 ### 📊 A Full-Stack Data Science & Visualization Project
 
